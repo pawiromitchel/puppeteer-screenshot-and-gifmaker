@@ -3,6 +3,7 @@ const helper = require("./helpers");
 
 // init settings
 const url = process.env.URL;
+const timeout = process.env.TIMEOUT || 0;
 const resolution = {
     defaultViewport: {
         // 4k resolution
@@ -24,7 +25,7 @@ const resolution = {
     await page.goto(url);
 
     // 3.5 Wait x sec if needed
-    await page.waitForTimeout(10000);
+    await page.waitForTimeout(timeout);
 
     // 4. Take screenshot
     await page.screenshot({ path: `./screenshots/${helper.getDate()}.png` });
