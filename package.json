@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/pawiromitchel/automated-screenshotter#readme",
   "dependencies": {
+    "get-pixels": "^3.3.2",
+    "gif-encoder": "^0.7.2",
     "puppeteer": "^9.0.0"
   }
 }
