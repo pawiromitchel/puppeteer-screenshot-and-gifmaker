@@ -1,0 +1,23 @@
+{
+  "name": "automated-screenshotter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawiromitchel/automated-screenshotter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pawiromitchel/automated-screenshotter/issues"
+  },
+  "homepage": "https://github.com/pawiromitchel/automated-screenshotter#readme",
+  "dependencies": {
+    "puppeteer": "^9.0.0"
+  }
+}
