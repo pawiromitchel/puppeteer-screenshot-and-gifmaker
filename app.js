@@ -1,18 +1,20 @@
 const puppeteer = require('puppeteer');
 
+// init settings
+const url = 'https://pawiromitchel.github.io/JS-Line-art-particle-physics/';
+const resolution = {
+    defaultViewport: {
+        // 4k resolution
+        width: 3040,
+        height: 2160,
+        isLandscape: true
+    }
+};
+
 (async () => {
 
-    const url = 'https://pawiromitchel.github.io/JS-Line-art-particle-physics/';
-
     // 1. Launch the browser and set the resolution
-    const browser = await puppeteer.launch({
-        defaultViewport: {
-            // 4k resolution
-            width: 3040,
-            height: 2160,
-            isLandscape: true
-        }
-    });
+    const browser = await puppeteer.launch(resolution);
 
     // 2. Open a new page
     const page = await browser.newPage();
