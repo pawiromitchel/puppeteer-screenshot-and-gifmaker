@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const helper = require("./helpers");
 
 // init settings
-const url = 'https://pawiromitchel.github.io/JS-Line-art-particle-physics/';
+const url = process.env.URL;
 const resolution = {
     defaultViewport: {
         // 4k resolution

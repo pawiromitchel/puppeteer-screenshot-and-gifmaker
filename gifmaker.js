@@ -4,8 +4,8 @@ const getPixels = require('get-pixels');
 const helper = require("./helpers");
 
 // init settings
-const url = 'https://pawiromitchel.github.io/JS-Line-art-particle-physics/';
-const amountOfFrames = 120;
+const url = process.env.URL;
+const amountOfFrames = process.env.FRAMES || 120;
 const viewPortResolution = { width: 800, height: 600 };
 
 (async () => {
