@@ -24,7 +24,7 @@ const viewPortResolution = { width: 800, height: 600 };
     encoder.setFrameRate(60);
     encoder.pipe(file);
     encoder.setQuality(40);
-    encoder.setDelay(25);
+    encoder.setDelay(80);
     encoder.writeHeader();
     encoder.setRepeat(0);
 
